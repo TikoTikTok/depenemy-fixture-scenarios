@@ -4,6 +4,6 @@
   "description": "Clean fixture — all depenemy rules pass",
   "license": "MIT",
   "dependencies": {
-    "@test-fixture/well-maintained-depenemy-test": "1.2.3"
+    "lodash": "4.17.21"
   }
 }
