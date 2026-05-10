@@ -1,9 +1,10 @@
 {
   "_comment": "Mock data for depenemy fixture tests. Use respx or httpx mocking to intercept API calls.",
-  "_fixture": "real-attack-simulation",
+  "_fixture": "real-attack-simulation \u2014 lodash@4.17.21 with tampered lockfile hash (B005)",
   "_rules_triggered": [
+    "B005",
     "S006",
-    "B005"
+    "S009"
   ],
   "_previous_version_context": {
     "version": "1.13.0",
@@ -69,9 +70,9 @@
   },
   "depenemy_package_metadata": {
     "_comment": "Exact PackageMetadata field values the scanner will use",
-    "name": "@test-fixture/axios-pattern-depenemy-test",
-    "latest_version": "1.14.1",
-    "target_version": "1.14.1",
+    "name": "lodash",
+    "latest_version": "4.17.21",
+    "target_version": "4.17.21",
     "published_at": "2024-04-24T16:20:00Z",
     "weekly_downloads": 95000,
     "total_downloads": 8400000,
@@ -84,14 +85,13 @@
     "has_install_scripts": false,
     "is_archived": false,
     "has_provenance": false,
-    "registry_integrity": "sha512-YXhpb3MtcGF0dGVybi1SRUdJU1RSWC1IQVNILXZhbHVlLWZvci1kZXBlbmVteS10ZXN0cw==",
+    "registry_integrity": "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==",
     "publisher_name": "axios-attacker-account",
     "publisher_has_github": true,
     "repo_commit_count": 234,
     "repo_issue_count": 31,
     "repo_pr_count": 67,
     "repo_has_ci": true,
-    "author_package_burst_count": 1,
-    "lockfile_integrity": "sha512-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    "author_package_burst_count": 1
   }
 }
