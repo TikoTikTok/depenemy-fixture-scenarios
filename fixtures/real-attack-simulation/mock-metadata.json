@@ -91,6 +91,7 @@
     "repo_issue_count": 31,
     "repo_pr_count": 67,
     "repo_has_ci": true,
-    "author_package_burst_count": 1
+    "author_package_burst_count": 1,
+    "lockfile_integrity": "sha512-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
   }
 }
