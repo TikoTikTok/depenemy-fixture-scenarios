@@ -1,0 +1,90 @@
+{
+  "_comment": "Mock data for depenemy fixture tests. Use respx or httpx mocking to intercept API calls.",
+  "_fixture": "lockfile-injection",
+  "_rules_triggered": [
+    "B007"
+  ],
+  "npm_registry_response": {
+    "_url": "https://registry.npmjs.org/@test-fixture/injected-dep-depenemy-test/1.0.0",
+    "name": "@test-fixture/injected-dep-depenemy-test",
+    "version": "1.0.0",
+    "description": "Fixture for a lockfile resolved-path injection attack.",
+    "dist": {
+      "integrity": "sha512-aW5qZWN0ZWQtZGVwLWZpeHR1cmUtaGFzaC12YWx1ZS1mb3ItZGVwZW5lbXktdGVzdC1maXh0dXJlcw==",
+      "tarball": "https://registry.npmjs.org/@test-fixture/injected-dep-depenemy-test/-/injected-dep-depenemy-test-1.0.0.tgz"
+    },
+    "maintainers": [
+      {
+        "name": "legit-maintainer",
+        "email": "legit@test-fixture.example"
+      }
+    ],
+    "_npmUser": {
+      "name": "legit-maintainer",
+      "email": "legit@test-fixture.example"
+    },
+    "time": {
+      "1.0.0": "2024-02-14T11:00:00Z"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/test-fixture-org/injected-dep-depenemy-test.git"
+    },
+    "scripts": {},
+    "dist-tags": {
+      "latest": "1.0.0"
+    },
+    "provenance": null
+  },
+  "npm_downloads_response": {
+    "_url": "https://api.npmjs.org/downloads/point/last-week/@test-fixture/injected-dep-depenemy-test",
+    "downloads": 2200,
+    "package": "@test-fixture/injected-dep-depenemy-test"
+  },
+  "github_api_response": {
+    "_repo_url": "https://api.github.com/repos/test-fixture-org/injected-dep-depenemy-test",
+    "full_name": "test-fixture-org/injected-dep-depenemy-test",
+    "archived": false,
+    "created_at": "2022-01-09T00:00:00Z",
+    "pushed_at": "2024-03-10T16:40:00Z",
+    "stargazers_count": 33,
+    "open_issues_count": 2,
+    "forks_count": 4,
+    "_commits_count": 16,
+    "_pull_requests_count": 4,
+    "_has_ci_workflow": true,
+    "_contributor_count": 6
+  },
+  "github_user_response": {
+    "_url": "https://api.github.com/users/legit-maintainer",
+    "_exists": true,
+    "login": "legit-maintainer",
+    "created_at": "2020-07-07T00:00:00Z"
+  },
+  "depenemy_package_metadata": {
+    "_comment": "Exact PackageMetadata field values the scanner will use",
+    "name": "@test-fixture/injected-dep-depenemy-test",
+    "latest_version": "1.0.0",
+    "target_version": "1.0.0",
+    "published_at": "2024-02-14T11:00:00Z",
+    "weekly_downloads": 2200,
+    "total_downloads": 85000,
+    "author_name": "legit-maintainer",
+    "author_account_created_at": "2020-07-07T00:00:00Z",
+    "contributor_count": 6,
+    "maintainer_count": 1,
+    "repository_url": "https://github.com/test-fixture-org/injected-dep-depenemy-test",
+    "is_deprecated": false,
+    "has_install_scripts": false,
+    "is_archived": false,
+    "has_provenance": false,
+    "registry_integrity": "sha512-aW5qZWN0ZWQtZGVwLWZpeHR1cmUtaGFzaC12YWx1ZS1mb3ItZGVwZW5lbXktdGVzdC1maXh0dXJlcw==",
+    "publisher_name": "legit-maintainer",
+    "publisher_has_github": true,
+    "repo_commit_count": 16,
+    "repo_issue_count": 2,
+    "repo_pr_count": 4,
+    "repo_has_ci": true,
+    "author_package_burst_count": 1
+  }
+}

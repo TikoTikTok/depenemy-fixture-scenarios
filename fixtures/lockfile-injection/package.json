@@ -1,0 +1,9 @@
+{
+  "name": "lockfile-injection-app",
+  "version": "1.0.0",
+  "description": "Fixture for B007 resolved path/package-name mismatch detection",
+  "license": "MIT",
+  "dependencies": {
+    "@test-fixture/injected-dep-depenemy-test": "1.0.0"
+  }
+}

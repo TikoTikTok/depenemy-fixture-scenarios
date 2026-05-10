@@ -1,0 +1,9 @@
+{
+  "name": "composite-score-app",
+  "version": "1.0.0",
+  "description": "Fixture for C001 composite score detection",
+  "license": "MIT",
+  "dependencies": {
+    "@test-fixture/composite-risk-depenemy-test": "0.1.0"
+  }
+}

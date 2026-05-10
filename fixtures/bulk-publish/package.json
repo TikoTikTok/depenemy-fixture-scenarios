@@ -1,0 +1,9 @@
+{
+  "name": "bulk-publish-app",
+  "version": "1.0.0",
+  "description": "Fixture for S008 bulk publish burst detection",
+  "license": "MIT",
+  "dependencies": {
+    "@test-fixture/bulk-published-depenemy-test": "0.0.1"
+  }
+}

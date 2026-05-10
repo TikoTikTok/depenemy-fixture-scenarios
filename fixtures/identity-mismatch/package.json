@@ -1,0 +1,9 @@
+{
+  "name": "identity-mismatch-app",
+  "version": "1.0.0",
+  "description": "Fixture for S009 publisher identity mismatch detection",
+  "license": "MIT",
+  "dependencies": {
+    "@test-fixture/identity-mismatch-depenemy-test": "2.3.0"
+  }
+}

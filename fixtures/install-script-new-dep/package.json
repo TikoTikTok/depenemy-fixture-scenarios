@@ -1,0 +1,9 @@
+{
+  "name": "install-script-app",
+  "version": "1.0.0",
+  "description": "Fixture for S001 install script detection",
+  "license": "MIT",
+  "dependencies": {
+    "@test-fixture/postinstall-pkg-depenemy-test": "0.9.1"
+  }
+}

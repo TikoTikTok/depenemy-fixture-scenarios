@@ -1,0 +1,9 @@
+{
+  "name": "real-attack-simulation-app",
+  "version": "1.0.0",
+  "description": "Fixture for S006 provenance regression and B005 integrity mismatch",
+  "license": "MIT",
+  "dependencies": {
+    "@test-fixture/axios-pattern-depenemy-test": "1.14.1"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "_comment": "Mock data for depenemy fixture tests. Use respx or httpx mocking to intercept API calls.",
+  "_fixture": "clean",
+  "_rules_triggered": [],
+  "npm_registry_response": {
+    "_url": "https://registry.npmjs.org/@test-fixture/well-maintained-depenemy-test/1.2.3",
+    "name": "@test-fixture/well-maintained-depenemy-test",
+    "version": "1.2.3",
+    "description": "Healthy, well-maintained package fixture.",
+    "dist": {
+      "integrity": "sha512-Y2xlYW4tZml4dHVyZS1oYXNoLXZhbHVlLWZvci1kZXBlbmVteS10ZXN0cy0tc2FmZS1wYWNrYWdl",
+      "tarball": "https://registry.npmjs.org/@test-fixture/well-maintained-depenemy-test/-/well-maintained-depenemy-test-1.2.3.tgz"
+    },
+    "maintainers": [
+      {
+        "name": "well-maintained-author",
+        "email": "maintainer@test-fixture.example"
+      },
+      {
+        "name": "release-bot",
+        "email": "releases@test-fixture.example"
+      }
+    ],
+    "_npmUser": {
+      "name": "well-maintained-author",
+      "email": "publisher@test-fixture.example"
+    },
+    "time": {
+      "1.2.3": "2024-02-01T12:00:00Z"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/test-fixture-org/well-maintained-depenemy-test.git"
+    },
+    "scripts": {},
+    "dist-tags": {
+      "latest": "1.2.3"
+    },
+    "provenance": null
+  },
+  "npm_downloads_response": {
+    "_url": "https://api.npmjs.org/downloads/point/last-week/@test-fixture/well-maintained-depenemy-test",
+    "downloads": 250000,
+    "package": "@test-fixture/well-maintained-depenemy-test"
+  },
+  "github_api_response": {
+    "_repo_url": "https://api.github.com/repos/test-fixture-org/well-maintained-depenemy-test",
+    "full_name": "test-fixture-org/well-maintained-depenemy-test",
+    "archived": false,
+    "created_at": "2018-04-01T00:00:00Z",
+    "pushed_at": "2024-05-20T10:30:00Z",
+    "stargazers_count": 4200,
+    "open_issues_count": 120,
+    "forks_count": 410,
+    "_commits_count": 450,
+    "_pull_requests_count": 87,
+    "_has_ci_workflow": true,
+    "_contributor_count": 25
+  },
+  "github_user_response": {
+    "_url": "https://api.github.com/users/well-maintained-author",
+    "_exists": true,
+    "login": "well-maintained-author",
+    "created_at": "2018-03-15T00:00:00Z"
+  },
+  "depenemy_package_metadata": {
+    "_comment": "Exact PackageMetadata field values the scanner will use",
+    "name": "@test-fixture/well-maintained-depenemy-test",
+    "latest_version": "1.2.3",
+    "target_version": "1.2.3",
+    "published_at": "2024-02-01T12:00:00Z",
+    "weekly_downloads": 250000,
+    "total_downloads": 15000000,
+    "author_name": "test-fixture-org",
+    "author_account_created_at": "2018-03-15T00:00:00Z",
+    "contributor_count": 25,
+    "maintainer_count": 2,
+    "repository_url": "https://github.com/test-fixture-org/well-maintained-depenemy-test",
+    "is_deprecated": false,
+    "has_install_scripts": false,
+    "is_archived": false,
+    "has_provenance": true,
+    "registry_integrity": "sha512-Y2xlYW4tZml4dHVyZS1oYXNoLXZhbHVlLWZvci1kZXBlbmVteS10ZXN0cy0tc2FmZS1wYWNrYWdl",
+    "publisher_name": "test-fixture-org",
+    "publisher_has_github": true,
+    "repo_commit_count": 450,
+    "repo_issue_count": 120,
+    "repo_pr_count": 87,
+    "repo_has_ci": true,
+    "author_package_burst_count": 1
+  }
+}

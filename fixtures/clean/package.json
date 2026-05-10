@@ -1,0 +1,9 @@
+{
+  "name": "my-clean-app",
+  "version": "1.0.0",
+  "description": "Clean fixture — all depenemy rules pass",
+  "license": "MIT",
+  "dependencies": {
+    "@test-fixture/well-maintained-depenemy-test": "1.2.3"
+  }
+}

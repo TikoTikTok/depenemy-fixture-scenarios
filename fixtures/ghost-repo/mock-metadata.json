@@ -1,0 +1,90 @@
+{
+  "_comment": "Mock data for depenemy fixture tests. Use respx or httpx mocking to intercept API calls.",
+  "_fixture": "ghost-repo",
+  "_rules_triggered": [
+    "S007"
+  ],
+  "npm_registry_response": {
+    "_url": "https://registry.npmjs.org/@test-fixture/ghost-repo-depenemy-test/1.0.0",
+    "name": "@test-fixture/ghost-repo-depenemy-test",
+    "version": "1.0.0",
+    "description": "Fixture representing a facade repository with almost no engineering activity.",
+    "dist": {
+      "integrity": "sha512-Z2hvc3QtcmVwby1maXh0dXJlLWhhc2gtdmFsdWUtZm9yLWRlcGVuZW15LXRlc3Rz",
+      "tarball": "https://registry.npmjs.org/@test-fixture/ghost-repo-depenemy-test/-/ghost-repo-depenemy-test-1.0.0.tgz"
+    },
+    "maintainers": [
+      {
+        "name": "ghost-publisher",
+        "email": "ghost@test-fixture.example"
+      }
+    ],
+    "_npmUser": {
+      "name": "ghost-publisher",
+      "email": "ghost@test-fixture.example"
+    },
+    "time": {
+      "1.0.0": "2024-06-01T10:00:00Z"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ghost-attacker-org/ghost-repo-depenemy-test.git"
+    },
+    "scripts": {},
+    "dist-tags": {
+      "latest": "1.0.0"
+    },
+    "provenance": null
+  },
+  "npm_downloads_response": {
+    "_url": "https://api.npmjs.org/downloads/point/last-week/@test-fixture/ghost-repo-depenemy-test",
+    "downloads": 8,
+    "package": "@test-fixture/ghost-repo-depenemy-test"
+  },
+  "github_api_response": {
+    "_repo_url": "https://api.github.com/repos/ghost-attacker-org/ghost-repo-depenemy-test",
+    "full_name": "ghost-attacker-org/ghost-repo-depenemy-test",
+    "archived": false,
+    "created_at": "2024-05-30T00:00:00Z",
+    "pushed_at": "2024-05-30T00:05:00Z",
+    "stargazers_count": 0,
+    "open_issues_count": 0,
+    "forks_count": 0,
+    "_commits_count": 1,
+    "_pull_requests_count": 0,
+    "_has_ci_workflow": false,
+    "_contributor_count": 1
+  },
+  "github_user_response": {
+    "_url": "https://api.github.com/users/ghost-publisher",
+    "_exists": true,
+    "login": "ghost-publisher",
+    "created_at": "2024-05-28T00:00:00Z"
+  },
+  "depenemy_package_metadata": {
+    "_comment": "Exact PackageMetadata field values the scanner will use",
+    "name": "@test-fixture/ghost-repo-depenemy-test",
+    "latest_version": "1.0.0",
+    "target_version": "1.0.0",
+    "published_at": "2024-06-01T10:00:00Z",
+    "weekly_downloads": 8,
+    "total_downloads": 44,
+    "author_name": "ghost-publisher",
+    "author_account_created_at": "2024-05-28T00:00:00Z",
+    "contributor_count": 1,
+    "maintainer_count": 1,
+    "repository_url": "https://github.com/ghost-attacker-org/ghost-repo-depenemy-test",
+    "is_deprecated": false,
+    "has_install_scripts": false,
+    "is_archived": false,
+    "has_provenance": false,
+    "registry_integrity": "sha512-Z2hvc3QtcmVwby1maXh0dXJlLWhhc2gtdmFsdWUtZm9yLWRlcGVuZW15LXRlc3Rz",
+    "publisher_name": "ghost-publisher",
+    "publisher_has_github": true,
+    "repo_commit_count": 1,
+    "repo_issue_count": 0,
+    "repo_pr_count": 0,
+    "repo_has_ci": false,
+    "author_package_burst_count": 1
+  }
+}

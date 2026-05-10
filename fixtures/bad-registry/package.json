@@ -1,0 +1,9 @@
+{
+  "name": "bad-registry-app",
+  "version": "1.0.0",
+  "description": "Fixture for B006 non-approved registry host detection",
+  "license": "MIT",
+  "dependencies": {
+    "@test-fixture/private-mirror-depenemy-test": "3.1.0"
+  }
+}

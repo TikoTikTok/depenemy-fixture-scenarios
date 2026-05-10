@@ -1,0 +1,9 @@
+{
+  "name": "ghost-repo-app",
+  "version": "1.0.0",
+  "description": "Fixture for S007 ghost repository detection",
+  "license": "MIT",
+  "dependencies": {
+    "@test-fixture/ghost-repo-depenemy-test": "1.0.0"
+  }
+}

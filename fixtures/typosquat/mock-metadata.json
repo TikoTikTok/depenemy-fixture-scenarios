@@ -1,0 +1,90 @@
+{
+  "_comment": "Mock data for depenemy fixture tests. Use respx or httpx mocking to intercept API calls.",
+  "_fixture": "typosquat",
+  "_rules_triggered": [
+    "R009"
+  ],
+  "npm_registry_response": {
+    "_url": "https://registry.npmjs.org/expres/4.18.1",
+    "name": "expres",
+    "version": "4.18.1",
+    "description": "Synthetic typosquat fixture resembling express.",
+    "dist": {
+      "integrity": "sha512-dHlwb3NxcXF0LXZhbC10dHlwYW50LWZpeHR1cmUtaGFzaC1leHByZXMtZGVwZW5lbXktdGVzdA==",
+      "tarball": "https://registry.npmjs.org/expres/-/expres-4.18.1.tgz"
+    },
+    "maintainers": [
+      {
+        "name": "attacker-2024",
+        "email": "attacker2024@test-fixture.example"
+      }
+    ],
+    "_npmUser": {
+      "name": "attacker-2024",
+      "email": "attacker2024@test-fixture.example"
+    },
+    "time": {
+      "4.18.1": "2024-11-20T06:00:00Z"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/typo-attacker/expres.git"
+    },
+    "scripts": {},
+    "dist-tags": {
+      "latest": "4.18.1"
+    },
+    "provenance": null
+  },
+  "npm_downloads_response": {
+    "_url": "https://api.npmjs.org/downloads/point/last-week/expres",
+    "downloads": 45,
+    "package": "expres"
+  },
+  "github_api_response": {
+    "_repo_url": "https://api.github.com/repos/typo-attacker/expres",
+    "full_name": "typo-attacker/expres",
+    "archived": false,
+    "created_at": "2024-11-15T00:00:00Z",
+    "pushed_at": "2024-11-16T00:00:00Z",
+    "stargazers_count": 0,
+    "open_issues_count": 0,
+    "forks_count": 0,
+    "_commits_count": 1,
+    "_pull_requests_count": 0,
+    "_has_ci_workflow": false,
+    "_contributor_count": 1
+  },
+  "github_user_response": {
+    "_url": "https://api.github.com/users/attacker-2024",
+    "_exists": false,
+    "login": null,
+    "created_at": null
+  },
+  "depenemy_package_metadata": {
+    "_comment": "Exact PackageMetadata field values the scanner will use",
+    "name": "expres",
+    "latest_version": "4.18.1",
+    "target_version": "4.18.1",
+    "published_at": "2024-11-20T06:00:00Z",
+    "weekly_downloads": 45,
+    "total_downloads": 500,
+    "author_name": "attacker-2024",
+    "author_account_created_at": "2024-11-15T00:00:00Z",
+    "contributor_count": 1,
+    "maintainer_count": 1,
+    "repository_url": "https://github.com/typo-attacker/expres",
+    "is_deprecated": false,
+    "has_install_scripts": false,
+    "is_archived": false,
+    "has_provenance": false,
+    "registry_integrity": "sha512-dHlwb3NxcXF0LXZhbC10dHlwYW50LWZpeHR1cmUtaGFzaC1leHByZXMtZGVwZW5lbXktdGVzdA==",
+    "publisher_name": "attacker-2024",
+    "publisher_has_github": false,
+    "repo_commit_count": 1,
+    "repo_issue_count": 0,
+    "repo_pr_count": 0,
+    "repo_has_ci": false,
+    "author_package_burst_count": 4
+  }
+}

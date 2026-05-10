@@ -1,0 +1,92 @@
+{
+  "_comment": "Mock data for depenemy fixture tests. Use respx or httpx mocking to intercept API calls.",
+  "_fixture": "install-script-new-dep",
+  "_rules_triggered": [
+    "S001"
+  ],
+  "npm_registry_response": {
+    "_url": "https://registry.npmjs.org/@test-fixture/postinstall-pkg-depenemy-test/0.9.1",
+    "name": "@test-fixture/postinstall-pkg-depenemy-test",
+    "version": "0.9.1",
+    "description": "Fixture package that exposes a postinstall script.",
+    "dist": {
+      "integrity": "sha512-cG9zdGluc3RhbGwtZml4dHVyZS1oYXNoLXZhbHVlLWZvci1kZXBlbmVteS10ZXN0cw==",
+      "tarball": "https://registry.npmjs.org/@test-fixture/postinstall-pkg-depenemy-test/-/postinstall-pkg-depenemy-test-0.9.1.tgz"
+    },
+    "maintainers": [
+      {
+        "name": "script-maintainer",
+        "email": "scripts@test-fixture.example"
+      }
+    ],
+    "_npmUser": {
+      "name": "script-maintainer",
+      "email": "scripts@test-fixture.example"
+    },
+    "time": {
+      "0.9.1": "2024-01-09T07:15:00Z"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/test-fixture-org/postinstall-pkg-depenemy-test.git"
+    },
+    "scripts": {
+      "postinstall": "node postinstall.js"
+    },
+    "dist-tags": {
+      "latest": "0.9.1"
+    },
+    "provenance": null
+  },
+  "npm_downloads_response": {
+    "_url": "https://api.npmjs.org/downloads/point/last-week/@test-fixture/postinstall-pkg-depenemy-test",
+    "downloads": 12000,
+    "package": "@test-fixture/postinstall-pkg-depenemy-test"
+  },
+  "github_api_response": {
+    "_repo_url": "https://api.github.com/repos/test-fixture-org/postinstall-pkg-depenemy-test",
+    "full_name": "test-fixture-org/postinstall-pkg-depenemy-test",
+    "archived": false,
+    "created_at": "2021-02-03T00:00:00Z",
+    "pushed_at": "2024-04-08T14:00:00Z",
+    "stargazers_count": 64,
+    "open_issues_count": 5,
+    "forks_count": 7,
+    "_commits_count": 28,
+    "_pull_requests_count": 9,
+    "_has_ci_workflow": true,
+    "_contributor_count": 7
+  },
+  "github_user_response": {
+    "_url": "https://api.github.com/users/script-maintainer",
+    "_exists": true,
+    "login": "script-maintainer",
+    "created_at": "2018-10-01T00:00:00Z"
+  },
+  "depenemy_package_metadata": {
+    "_comment": "Exact PackageMetadata field values the scanner will use",
+    "name": "@test-fixture/postinstall-pkg-depenemy-test",
+    "latest_version": "0.9.1",
+    "target_version": "0.9.1",
+    "published_at": "2024-01-09T07:15:00Z",
+    "weekly_downloads": 12000,
+    "total_downloads": 410000,
+    "author_name": "script-maintainer",
+    "author_account_created_at": "2018-10-01T00:00:00Z",
+    "contributor_count": 7,
+    "maintainer_count": 1,
+    "repository_url": "https://github.com/test-fixture-org/postinstall-pkg-depenemy-test",
+    "is_deprecated": false,
+    "has_install_scripts": true,
+    "is_archived": false,
+    "has_provenance": true,
+    "registry_integrity": "sha512-cG9zdGluc3RhbGwtZml4dHVyZS1oYXNoLXZhbHVlLWZvci1kZXBlbmVteS10ZXN0cw==",
+    "publisher_name": "script-maintainer",
+    "publisher_has_github": true,
+    "repo_commit_count": 28,
+    "repo_issue_count": 5,
+    "repo_pr_count": 9,
+    "repo_has_ci": true,
+    "author_package_burst_count": 1
+  }
+}

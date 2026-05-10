@@ -1,0 +1,96 @@
+{
+  "_comment": "Mock data for depenemy fixture tests. Use respx or httpx mocking to intercept API calls.",
+  "_fixture": "real-attack-simulation",
+  "_rules_triggered": [
+    "S006",
+    "B005"
+  ],
+  "_previous_version_context": {
+    "version": "1.13.0",
+    "has_provenance": true,
+    "published_at": "2024-04-10T08:00:00Z"
+  },
+  "npm_registry_response": {
+    "_url": "https://registry.npmjs.org/@test-fixture/axios-pattern-depenemy-test/1.14.1",
+    "name": "@test-fixture/axios-pattern-depenemy-test",
+    "version": "1.14.1",
+    "description": "Fixture based on the Axios 1.14.1 attack pattern.",
+    "dist": {
+      "integrity": "sha512-YXhpb3MtcGF0dGVybi1SRUdJU1RSWC1IQVNILXZhbHVlLWZvci1kZXBlbmVteS10ZXN0cw==",
+      "tarball": "https://registry.npmjs.org/@test-fixture/axios-pattern-depenemy-test/-/axios-pattern-depenemy-test-1.14.1.tgz"
+    },
+    "maintainers": [
+      {
+        "name": "axios-attacker-account",
+        "email": "axios@test-fixture.example"
+      }
+    ],
+    "_npmUser": {
+      "name": "axios-attacker-account",
+      "email": "axios@test-fixture.example"
+    },
+    "time": {
+      "1.14.1": "2024-04-24T16:20:00Z"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/axios-pattern-org/axios-pattern-depenemy-test.git"
+    },
+    "scripts": {},
+    "dist-tags": {
+      "latest": "1.14.1"
+    },
+    "provenance": null
+  },
+  "npm_downloads_response": {
+    "_url": "https://api.npmjs.org/downloads/point/last-week/@test-fixture/axios-pattern-depenemy-test",
+    "downloads": 95000,
+    "package": "@test-fixture/axios-pattern-depenemy-test"
+  },
+  "github_api_response": {
+    "_repo_url": "https://api.github.com/repos/axios-pattern-org/axios-pattern-depenemy-test",
+    "full_name": "axios-pattern-org/axios-pattern-depenemy-test",
+    "archived": false,
+    "created_at": "2020-03-01T00:00:00Z",
+    "pushed_at": "2024-04-23T18:30:00Z",
+    "stargazers_count": 1900,
+    "open_issues_count": 31,
+    "forks_count": 180,
+    "_commits_count": 234,
+    "_pull_requests_count": 67,
+    "_has_ci_workflow": true,
+    "_contributor_count": 12
+  },
+  "github_user_response": {
+    "_url": "https://api.github.com/users/axios-attacker-account",
+    "_exists": true,
+    "login": "axios-attacker-account",
+    "created_at": "2021-01-12T00:00:00Z"
+  },
+  "depenemy_package_metadata": {
+    "_comment": "Exact PackageMetadata field values the scanner will use",
+    "name": "@test-fixture/axios-pattern-depenemy-test",
+    "latest_version": "1.14.1",
+    "target_version": "1.14.1",
+    "published_at": "2024-04-24T16:20:00Z",
+    "weekly_downloads": 95000,
+    "total_downloads": 8400000,
+    "author_name": "axios-attacker-account",
+    "author_account_created_at": "2021-01-12T00:00:00Z",
+    "contributor_count": 12,
+    "maintainer_count": 1,
+    "repository_url": "https://github.com/axios-pattern-org/axios-pattern-depenemy-test",
+    "is_deprecated": false,
+    "has_install_scripts": false,
+    "is_archived": false,
+    "has_provenance": false,
+    "registry_integrity": "sha512-YXhpb3MtcGF0dGVybi1SRUdJU1RSWC1IQVNILXZhbHVlLWZvci1kZXBlbmVteS10ZXN0cw==",
+    "publisher_name": "axios-attacker-account",
+    "publisher_has_github": true,
+    "repo_commit_count": 234,
+    "repo_issue_count": 31,
+    "repo_pr_count": 67,
+    "repo_has_ci": true,
+    "author_package_burst_count": 1
+  }
+}

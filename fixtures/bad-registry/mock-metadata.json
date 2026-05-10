@@ -1,0 +1,90 @@
+{
+  "_comment": "Mock data for depenemy fixture tests. Use respx or httpx mocking to intercept API calls.",
+  "_fixture": "bad-registry",
+  "_rules_triggered": [
+    "B006"
+  ],
+  "npm_registry_response": {
+    "_url": "https://registry.npmjs.org/@test-fixture/private-mirror-depenemy-test/3.1.0",
+    "name": "@test-fixture/private-mirror-depenemy-test",
+    "version": "3.1.0",
+    "description": "Fixture where the resolved tarball host is not approved.",
+    "dist": {
+      "integrity": "sha512-YmFkLXJlZ2lzdHJ5LWZpeHR1cmUtaGFzaC12YWx1ZS1mb3ItZGVwZW5lbXktdGVzdC1maXh0dXJlcw==",
+      "tarball": "https://registry.npmjs.org/@test-fixture/private-mirror-depenemy-test/-/private-mirror-depenemy-test-3.1.0.tgz"
+    },
+    "maintainers": [
+      {
+        "name": "mirror-maintainer",
+        "email": "mirror@test-fixture.example"
+      }
+    ],
+    "_npmUser": {
+      "name": "mirror-maintainer",
+      "email": "mirror@test-fixture.example"
+    },
+    "time": {
+      "3.1.0": "2024-01-18T08:45:00Z"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/test-fixture-org/private-mirror-depenemy-test.git"
+    },
+    "scripts": {},
+    "dist-tags": {
+      "latest": "3.1.0"
+    },
+    "provenance": null
+  },
+  "npm_downloads_response": {
+    "_url": "https://api.npmjs.org/downloads/point/last-week/@test-fixture/private-mirror-depenemy-test",
+    "downloads": 3500,
+    "package": "@test-fixture/private-mirror-depenemy-test"
+  },
+  "github_api_response": {
+    "_repo_url": "https://api.github.com/repos/test-fixture-org/private-mirror-depenemy-test",
+    "full_name": "test-fixture-org/private-mirror-depenemy-test",
+    "archived": false,
+    "created_at": "2020-09-12T00:00:00Z",
+    "pushed_at": "2024-03-22T13:20:00Z",
+    "stargazers_count": 72,
+    "open_issues_count": 6,
+    "forks_count": 9,
+    "_commits_count": 34,
+    "_pull_requests_count": 11,
+    "_has_ci_workflow": true,
+    "_contributor_count": 8
+  },
+  "github_user_response": {
+    "_url": "https://api.github.com/users/mirror-maintainer",
+    "_exists": true,
+    "login": "mirror-maintainer",
+    "created_at": "2019-02-10T00:00:00Z"
+  },
+  "depenemy_package_metadata": {
+    "_comment": "Exact PackageMetadata field values the scanner will use",
+    "name": "@test-fixture/private-mirror-depenemy-test",
+    "latest_version": "3.1.0",
+    "target_version": "3.1.0",
+    "published_at": "2024-01-18T08:45:00Z",
+    "weekly_downloads": 3500,
+    "total_downloads": 250000,
+    "author_name": "mirror-maintainer",
+    "author_account_created_at": "2019-02-10T00:00:00Z",
+    "contributor_count": 8,
+    "maintainer_count": 1,
+    "repository_url": "https://github.com/test-fixture-org/private-mirror-depenemy-test",
+    "is_deprecated": false,
+    "has_install_scripts": false,
+    "is_archived": false,
+    "has_provenance": false,
+    "registry_integrity": "sha512-YmFkLXJlZ2lzdHJ5LWZpeHR1cmUtaGFzaC12YWx1ZS1mb3ItZGVwZW5lbXktdGVzdC1maXh0dXJlcw==",
+    "publisher_name": "mirror-maintainer",
+    "publisher_has_github": true,
+    "repo_commit_count": 34,
+    "repo_issue_count": 6,
+    "repo_pr_count": 11,
+    "repo_has_ci": true,
+    "author_package_burst_count": 1
+  }
+}

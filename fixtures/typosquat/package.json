@@ -1,0 +1,9 @@
+{
+  "name": "typosquat-app",
+  "version": "1.0.0",
+  "description": "Fixture for R009 typosquatting detection",
+  "license": "MIT",
+  "dependencies": {
+    "expres": "4.18.1"
+  }
+}

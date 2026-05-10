@@ -1,0 +1,95 @@
+{
+  "_comment": "Mock data for depenemy fixture tests. Use respx or httpx mocking to intercept API calls.",
+  "_fixture": "composite-score",
+  "_rules_triggered": [
+    "S007",
+    "S008",
+    "S009",
+    "R003",
+    "R006",
+    "C001"
+  ],
+  "npm_registry_response": {
+    "_url": "https://registry.npmjs.org/@test-fixture/composite-risk-depenemy-test/0.1.0",
+    "name": "@test-fixture/composite-risk-depenemy-test",
+    "version": "0.1.0",
+    "description": "Fixture designed to exceed the composite supply-chain risk threshold.",
+    "dist": {
+      "integrity": "sha512-Y29tcG9zaXRlLXJpc2stZml4dHVyZS1oYXNoLXZhbHVlLWZvci1kZXBlbmVteS10ZXN0cw==",
+      "tarball": "https://registry.npmjs.org/@test-fixture/composite-risk-depenemy-test/-/composite-risk-depenemy-test-0.1.0.tgz"
+    },
+    "maintainers": [
+      {
+        "name": "composite-attacker",
+        "email": "composite@test-fixture.example"
+      }
+    ],
+    "_npmUser": {
+      "name": "composite-attacker",
+      "email": "composite@test-fixture.example"
+    },
+    "time": {
+      "0.1.0": "2024-09-10T05:05:00Z"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/composite-attacker/composite-risk-depenemy-test.git"
+    },
+    "scripts": {},
+    "dist-tags": {
+      "latest": "0.1.0"
+    },
+    "provenance": null
+  },
+  "npm_downloads_response": {
+    "_url": "https://api.npmjs.org/downloads/point/last-week/@test-fixture/composite-risk-depenemy-test",
+    "downloads": 12,
+    "package": "@test-fixture/composite-risk-depenemy-test"
+  },
+  "github_api_response": {
+    "_repo_url": "https://api.github.com/repos/composite-attacker/composite-risk-depenemy-test",
+    "full_name": "composite-attacker/composite-risk-depenemy-test",
+    "archived": false,
+    "created_at": "2024-09-08T00:00:00Z",
+    "pushed_at": "2024-09-08T00:10:00Z",
+    "stargazers_count": 0,
+    "open_issues_count": 0,
+    "forks_count": 0,
+    "_commits_count": 1,
+    "_pull_requests_count": 0,
+    "_has_ci_workflow": false,
+    "_contributor_count": 1
+  },
+  "github_user_response": {
+    "_url": "https://api.github.com/users/composite-attacker",
+    "_exists": false,
+    "login": null,
+    "created_at": null
+  },
+  "depenemy_package_metadata": {
+    "_comment": "Exact PackageMetadata field values the scanner will use",
+    "name": "@test-fixture/composite-risk-depenemy-test",
+    "latest_version": "0.1.0",
+    "target_version": "0.1.0",
+    "published_at": "2024-09-10T05:05:00Z",
+    "weekly_downloads": 12,
+    "total_downloads": 60,
+    "author_name": "composite-attacker",
+    "author_account_created_at": "2024-09-01T00:00:00Z",
+    "contributor_count": 1,
+    "maintainer_count": 1,
+    "repository_url": "https://github.com/composite-attacker/composite-risk-depenemy-test",
+    "is_deprecated": false,
+    "has_install_scripts": false,
+    "is_archived": false,
+    "has_provenance": false,
+    "registry_integrity": "sha512-Y29tcG9zaXRlLXJpc2stZml4dHVyZS1oYXNoLXZhbHVlLWZvci1kZXBlbmVteS10ZXN0cw==",
+    "publisher_name": "composite-attacker",
+    "publisher_has_github": false,
+    "repo_commit_count": 1,
+    "repo_issue_count": 0,
+    "repo_pr_count": 0,
+    "repo_has_ci": false,
+    "author_package_burst_count": 4
+  }
+}

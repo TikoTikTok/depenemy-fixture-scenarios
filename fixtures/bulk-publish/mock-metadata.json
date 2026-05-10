@@ -1,0 +1,101 @@
+{
+  "_comment": "Mock data for depenemy fixture tests. Use respx or httpx mocking to intercept API calls.",
+  "_fixture": "bulk-publish",
+  "_rules_triggered": [
+    "S008"
+  ],
+  "_bulk_publish_context": {
+    "publisher": "burst-publisher-2024",
+    "window_hours": 24,
+    "packages_published": [
+      "@test-fixture/bulk-published-depenemy-test",
+      "lodahs-depenemy-test",
+      "requst-depenemy-test",
+      "momnet-depenemy-test",
+      "axois-depenemy-test"
+    ]
+  },
+  "npm_registry_response": {
+    "_url": "https://registry.npmjs.org/@test-fixture/bulk-published-depenemy-test/0.0.1",
+    "name": "@test-fixture/bulk-published-depenemy-test",
+    "version": "0.0.1",
+    "description": "Fixture representing a publisher burst event.",
+    "dist": {
+      "integrity": "sha512-YnVsay1wdWJsaXNoLWZpeHR1cmUtaGFzaC12YWx1ZS1mb3ItZGVwZW5lbXktdGVzdHM=",
+      "tarball": "https://registry.npmjs.org/@test-fixture/bulk-published-depenemy-test/-/bulk-published-depenemy-test-0.0.1.tgz"
+    },
+    "maintainers": [
+      {
+        "name": "burst-publisher-2024",
+        "email": "burst@test-fixture.example"
+      }
+    ],
+    "_npmUser": {
+      "name": "burst-publisher-2024",
+      "email": "burst@test-fixture.example"
+    },
+    "time": {
+      "0.0.1": "2024-10-03T03:30:00Z"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/test-fixture-org/bulk-published-depenemy-test.git"
+    },
+    "scripts": {},
+    "dist-tags": {
+      "latest": "0.0.1"
+    },
+    "provenance": null
+  },
+  "npm_downloads_response": {
+    "_url": "https://api.npmjs.org/downloads/point/last-week/@test-fixture/bulk-published-depenemy-test",
+    "downloads": 23,
+    "package": "@test-fixture/bulk-published-depenemy-test"
+  },
+  "github_api_response": {
+    "_repo_url": "https://api.github.com/repos/test-fixture-org/bulk-published-depenemy-test",
+    "full_name": "test-fixture-org/bulk-published-depenemy-test",
+    "archived": false,
+    "created_at": "2024-09-28T00:00:00Z",
+    "pushed_at": "2024-10-03T03:45:00Z",
+    "stargazers_count": 0,
+    "open_issues_count": 1,
+    "forks_count": 0,
+    "_commits_count": 5,
+    "_pull_requests_count": 1,
+    "_has_ci_workflow": false,
+    "_contributor_count": 1
+  },
+  "github_user_response": {
+    "_url": "https://api.github.com/users/burst-publisher-2024",
+    "_exists": true,
+    "login": "burst-publisher-2024",
+    "created_at": "2024-09-15T00:00:00Z"
+  },
+  "depenemy_package_metadata": {
+    "_comment": "Exact PackageMetadata field values the scanner will use",
+    "name": "@test-fixture/bulk-published-depenemy-test",
+    "latest_version": "0.0.1",
+    "target_version": "0.0.1",
+    "published_at": "2024-10-03T03:30:00Z",
+    "weekly_downloads": 23,
+    "total_downloads": 130,
+    "author_name": "burst-publisher-2024",
+    "author_account_created_at": "2024-09-15T00:00:00Z",
+    "contributor_count": 1,
+    "maintainer_count": 1,
+    "repository_url": "https://github.com/test-fixture-org/bulk-published-depenemy-test",
+    "is_deprecated": false,
+    "has_install_scripts": false,
+    "is_archived": false,
+    "has_provenance": false,
+    "registry_integrity": "sha512-YnVsay1wdWJsaXNoLWZpeHR1cmUtaGFzaC12YWx1ZS1mb3ItZGVwZW5lbXktdGVzdHM=",
+    "publisher_name": "burst-publisher-2024",
+    "publisher_has_github": true,
+    "repo_commit_count": 5,
+    "repo_issue_count": 1,
+    "repo_pr_count": 1,
+    "repo_has_ci": false,
+    "author_package_burst_count": 5
+  }
+}
