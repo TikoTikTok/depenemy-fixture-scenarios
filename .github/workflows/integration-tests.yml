@@ -29,31 +29,87 @@ jobs:
           python-version: "3.11"
 
       - name: Install depenemy + test deps
-        run: |
-          pip install git+https://github.com/TikoTikTok/depenemy.git@feat/github-action-docker pytest
+        run: pip install git+https://github.com/TikoTikTok/depenemy.git@feat/github-action-docker pytest
 
       - name: Run depenemy rule integration tests
-        run: |
-          pytest tests/test_depenemy_rules.py -v --tb=short
+        run: pytest tests/test_depenemy_rules.py -v --tb=short
 
   # ────────────────────────────────────────────────────────────────────────────
-  # Scan clean fixtures using the depenemy action — expect: PASS
-  # Mirrors exactly what a client would put in their .github/workflows/
+  # Live action scan matrix — one job per fixture scenario
+  #
+  # Fixtures using real packages (live-scan verified):
+  #   clean, hash-mismatch, bad-registry, lockfile-injection, real-attack-simulation
+  #
+  # Fixtures using synthetic packages (unit-test verified, live scan shows 0):
+  #   install-script-new-dep, typosquat, bulk-publish, ghost-repo,
+  #   identity-mismatch, composite-score
   # ────────────────────────────────────────────────────────────────────────────
-  scan-clean:
-    name: "Supply Chain Scan — Clean Fixtures (expect: pass)"
+  scan-fixture:
+    name: "Scan: ${{ matrix.fixture }} (${{ matrix.expect }})"
     runs-on: ubuntu-latest
+    continue-on-error: ${{ matrix.expect == 'fail' }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # ── PASS (clean) ───────────────────────────────────────────────────
+          - fixture: clean
+            expect: pass
+            rule: "—"
+
+          # ── BLOCK: lockfile-based rules (live-scan verified) ───────────────
+          - fixture: hash-mismatch
+            expect: fail
+            rule: "B005 — tampered integrity hash"
+
+          - fixture: bad-registry
+            expect: fail
+            rule: "B006 — tarball from unapproved registry"
+
+          - fixture: lockfile-injection
+            expect: fail
+            rule: "B007 — resolved path swapped to different package"
+
+          - fixture: real-attack-simulation
+            expect: fail
+            rule: "B005 — axios 1.14.1 attack pattern"
+
+          # ── ALERT/BLOCK: metadata-based rules (unit-test verified) ─────────
+          - fixture: install-script-new-dep
+            expect: fail
+            rule: "S001 — postinstall script in new dependency"
+
+          - fixture: typosquat
+            expect: fail
+            rule: "R009 — misspelled popular package name"
+
+          - fixture: bulk-publish
+            expect: fail
+            rule: "S008 — burst of packages from same publisher"
+
+          - fixture: ghost-repo
+            expect: fail
+            rule: "S007 — facade repository with minimal activity"
+
+          - fixture: identity-mismatch
+            expect: fail
+            rule: "S009 — publisher identity mismatch"
+
+          - fixture: composite-score
+            expect: fail
+            rule: "C001 — composite score exceeds threshold"
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Run depenemy
+      - name: Run depenemy (${{ matrix.rule }})
         id: scan
         uses: TikoTikTok/depenemy@feat/github-action-docker
         with:
-          paths: fixtures/clean
+          paths: fixtures/${{ matrix.fixture }}
           approved-registries: "registry.npmjs.org"
           fail-on: error
           upload-sarif: "false"
@@ -61,62 +117,20 @@ jobs:
 
       - name: Upload SARIF to GitHub Code Scanning
         if: always()
-        continue-on-error: true  # Code Scanning may not be enabled on this repo
+        continue-on-error: true
         uses: github/codeql-action/upload-sarif@v3
         with:
           sarif_file: ${{ steps.scan.outputs.sarif-file }}
-          category: depenemy-clean
+          category: depenemy-${{ matrix.fixture }}
 
       - name: Summarise findings
         if: always()
         run: |
-          echo "### 🟢 Clean Fixtures Scan" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Scan: \`${{ matrix.fixture }}\` — expected: ${{ matrix.expect }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "**Rule:** ${{ matrix.rule }}" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "| Metric | Value |" >> "$GITHUB_STEP_SUMMARY"
           echo "|--------|-------|" >> "$GITHUB_STEP_SUMMARY"
           echo "| Total findings | ${{ steps.scan.outputs.findings-count }} |" >> "$GITHUB_STEP_SUMMARY"
           echo "| Error findings | ${{ steps.scan.outputs.errors-count }} |" >> "$GITHUB_STEP_SUMMARY"
-
-  # ────────────────────────────────────────────────────────────────────────────
-  # Scan attack fixtures using the depenemy action — expect: FAIL
-  # continue-on-error: true so the overall workflow still completes
-  # ────────────────────────────────────────────────────────────────────────────
-  scan-attack:
-    name: "Supply Chain Scan — Attack Fixtures (expect: fail)"
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Run depenemy
-        id: scan
-        uses: TikoTikTok/depenemy@feat/github-action-docker
-        with:
-          paths: fixtures/real-attack-simulation
-          approved-registries: "registry.npmjs.org"
-          fail-on: error
-          upload-sarif: "false"
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload SARIF to GitHub Code Scanning
-        if: always()
-        continue-on-error: true  # Code Scanning may not be enabled on this repo
-        uses: github/codeql-action/upload-sarif@v3
-        with:
-          sarif_file: ${{ steps.scan.outputs.sarif-file }}
-          category: depenemy-attack
-
-      - name: Summarise findings
-        if: always()
-        run: |
-          echo "### 🔴 Attack Fixtures Scan" >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "| Metric | Value |" >> "$GITHUB_STEP_SUMMARY"
-          echo "|--------|-------|" >> "$GITHUB_STEP_SUMMARY"
-          echo "| Total findings | ${{ steps.scan.outputs.findings-count }} |" >> "$GITHUB_STEP_SUMMARY"
-          echo "| Error findings | ${{ steps.scan.outputs.errors-count }} |" >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "> ℹ️ This job is **expected** to detect findings. \`continue-on-error: true\` is set." >> "$GITHUB_STEP_SUMMARY"
